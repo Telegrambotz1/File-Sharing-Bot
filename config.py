@@ -65,6 +65,8 @@ ADMINS.append(1250450587)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
+HELP_MSG = os.environ.get("HELP MESSAGE", "BRUH")
+
 logging.basicConfig(
     level=logging.INFO,
     format="[%(asctime)s - %(levelname)s] - %(name)s - %(message)s",
