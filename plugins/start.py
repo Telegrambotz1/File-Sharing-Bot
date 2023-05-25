@@ -9,6 +9,8 @@ from pyrogram import Client, filters, __version__
 from pyrogram.enums import ParseMode
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram.errors import FloodWait, UserIsBlocked, InputUserDeactivated
+import random
+
 
 from bot import Bot
 from config import ADMINS, FORCE_MSG, START_MSG, CUSTOM_CAPTION, DISABLE_CHANNEL_BUTTON, PROTECT_CONTENT
@@ -17,6 +19,14 @@ from database.database import add_user, del_user, full_userbase, present_user
 
 
 
+PICS = [
+ "https://telegra.ph/file/d37ed074bcc9cbcca8125.jpg",
+ "https://telegra.ph/file/6a4b5e30e8fb164d6d4b0.jpg",
+ "https://telegra.ph/file/7327999176bbd7482c42b.jpg",
+ "https://telegra.ph/file/af8e88c75a5ee0e419e52.jpg",
+ "https://telegra.ph/file/2da1bc95c38f78365fb91.jpg",
+ "https://telegra.ph/file/7e83b0d5d1373a4e23c48.jpg"
+]
 
 @Bot.on_message(filters.command('start') & filters.private & subscribed)
 async def start_command(client: Client, message: Message):
@@ -94,7 +104,7 @@ async def start_command(client: Client, message: Message):
             ]
         )
         await message.reply_photo(
-            photo = "https://telegra.ph/file/b2edd6a66f869e4fc533d.jpg",
+            photo = random.choice(PICS),
             caption = START_MSG.format(
                 first = message.from_user.first_name,
                 last = message.from_user.last_name,
