@@ -44,15 +44,15 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         await query.message.edit_text(
             text = f" hi wassup",
         )
-    elif data == "help":
+    elif data == "bruh":
         await query.message.edit_text(
             text = f" hi wassup",
         )
-    elif data == "help":
+    elif data == "sri":
         await query.message.edit_text(
             text = f" hi wassup",
         )
-    elif data == "close":
+    elif data == "dude":
         await query.message.delete()
         try:
             await query.message.reply_to_message.delete()
