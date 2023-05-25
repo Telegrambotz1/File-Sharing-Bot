@@ -104,7 +104,9 @@ async def start_command(client: Client, message: Message):
                     InlineKeyboardButton("😎 𝗠𝗢𝗩𝗜𝗘𝗦 𝗔𝗡𝗗 𝗦𝗘𝗥𝗜𝗘𝗦 🥺", url = "https://t.me/MOVIESSNOWINDIA"),
                     ],[
                     InlineKeyboardButton("🧐 𝗔𝗕𝗢𝗨𝗧 🤯", callback_data = "about"),
-                    InlineKeyboardButton("☺️ 𝗛𝗘𝗟𝗣 🤔", callback_data = "help")
+                    InlineKeyboardButton("😤 𝗗𝗖𝗠𝗔 👀", callback_data = "dcma")
+                    ],[
+                    InlineKeyboardButton("☺️ 𝗥𝗨𝗟𝗘𝗦 𝗔𝗡𝗗 𝗖𝗢𝗡𝗗𝗜𝗧𝗜𝗢𝗡𝗦 🤔", callback_data = "help")
                 ]
             ]
         )
@@ -125,14 +127,14 @@ async def start_command(client: Client, message: Message):
     
 #=====================================================================================##
 
-WAIT_MSG = """"<b>Processing ...</b>"""
+WAIT_MSG = """"<b>𝗪𝗔𝗜𝗧 𝗞𝗔𝗥𝗢 𝗙𝗜𝗟𝗘𝗦 𝗔𝗥𝗘 𝗚𝗘𝗧𝗧𝗜𝗡𝗚 𝗥𝗘𝗔𝗗𝗬 ...</b>"""
 
 REPLY_ERROR = """<code>Use this command as a replay to any telegram message with out any spaces.</code>"""
 
 #=====================================================================================##
 
 
-@Bot.on_message(filters.command('help'))
+@Bot.on_message(filters.command('help') & filters.private)
 async def help_cmd(client, message):
      await message.reply_photo(
          photo = "https://telegra.ph/file/b2edd6a66f869e4fc533d.jpg")
