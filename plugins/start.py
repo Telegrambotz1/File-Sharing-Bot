@@ -88,7 +88,7 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
+                    InlineKeyboardButton("😊 About Me", callback_data = "bruh"),
                     InlineKeyboardButton("🔒 Close", callback_data = "close")
                 ]
             ]
@@ -116,7 +116,18 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
 
 #=====================================================================================##
 
+@Bot.on_callback_query()
+async def callback(Bot, msg: CallbackQuery):
+    if msg.data == "bruh":
+        await msg.message.edit(
+            text="fine working"
+        )
     
+    
+
+
+
+#===================================================================================================##
     
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
