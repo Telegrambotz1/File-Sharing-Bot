@@ -40,7 +40,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                 ]
             )
         )
-    elif data == "help":
+    elif data == "con":
         await query.message.edit_text(
             text = f"""
        ┍━━━━━»•» 𝗥𝗨𝗟𝗘𝗦 🌺 «•«━┑
@@ -57,7 +57,44 @@ async def cb_handler(client: Bot, query: CallbackQuery):
 ˚₊· ͟͟͞͞➳❥ 𝗗𝗢𝗡𝗧 𝗩𝗜𝗢𝗟𝗔𝗧𝗘 𝗧𝗛𝗘 𝗥𝗨𝗟𝗘𝗦 𝗘𝗡𝗝𝗢𝗬 :𝗗
 
  ┕━»•» 🌺 𝗘𝗡𝗗 «•«━━━━━┙""",
+       reply_markup = InlineKeyboardMarkup(
+                [
+                    [   
+                        InlineKeyboardButton("😇 𝗖𝗢𝗡𝗧𝗔𝗖𝗧",url= "https://t.me/SIRISH_123"),
+                        InlineKeyboardButton("🔒 𝗖𝗟𝗢𝗦𝗘", callback_data = "close")
+                    ]
+                ]
+            )
         )
+    elif data == "dcma":
+        await query.message.edit_text(
+            text = """
+𝗪𝗛𝗔𝗧 𝗜𝗦 𝗔 𝗗𝗖𝗠𝗔 ?
+
+ Digital Millennium Copyright Act is a international act which says that a
+ person know or unknow violents the hard wrok of someone it is against the
+ rules of telegram so any kind of copyright violation is leads to permanent
+ ban from telegram to protect the prior privacy telegram 2023 
+ 
+ 𝗛𝗢𝗪 𝗜𝗧 𝗪𝗢𝗥𝗞𝗦 ?
+ 
+ if you think we miss used our power and copied your work
+ and didn't give the credit and you think we going against law pls
+ report it the owners we will remove the content right away from the 
+ channel pls reporting is not a very good option we will surely respond
+ if we are late we reply to all messages we are following law and not
+ violating and of the main telegram rules
+ 
+ report here @tufail505 && @SIRISH_123  thanks enjoy """
+       reply_markup = InlineKeyboardMarkup(
+                [
+                    [   
+                        InlineKeyboardButton("😇 𝗖𝗢𝗡𝗧𝗔𝗖𝗧",url= "https://t.me/SIRISH_123"),
+                        InlineKeyboardButton("🔒 𝗖𝗟𝗢𝗦𝗘", callback_data = "close")
+                    ]
+                ]
+            )
+        )  
     elif data == "close":
         await query.message.delete()
         try:
