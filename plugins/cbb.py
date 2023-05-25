@@ -14,19 +14,19 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             
 ╭────[ **🔅FɪʟᴇSᴛᴏʀᴇBᴏᴛ🔅**]────⍟
 │
-├🔸🤖 **My Name:** [𝐅𝐢𝐥𝐞 𝐒𝐭𝐨𝐫𝐞 𝐁𝐨𝐭](https://t.me/FILE_STOREINDIA_BOT)
+├🔸🤖 𝙈𝙔 𝙉𝘼𝙈𝙀 : <a href='https://t.me/FILE_STOREINDIA_BOT'>𝗥𝗢𝗦𝗬</a>
 │
-├🔸📝 **Language:** [𝐏𝐲𝐭𝐡𝐨𝐧𝟑](https://www.python.org)
+├🔸📝 𝗟𝗔𝗡𝗚𝗨𝗔𝗚𝗘 : <a href='https://www.python.org'>𝗣𝗬𝗧𝗛𝗢𝗡 3</a>
 │
-├🔹📚 **Library:** [𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦](https://docs.pyrogram.org)
+├🔹📚 𝗟𝗜𝗕𝗥𝗔𝗥𝗬 : <a href='https://docs.pyrogram.org'>𝗣𝗥𝗢𝗚𝗥𝗔𝗠</a>
 │
-├🔹📡 **Hosted On:** [fly.io](https://fly.io/)
+├🔹📡 𝗛𝗢𝗦𝗧𝗘𝗗 𝗢𝗡 : <a href='https://fly.io'>𝗙𝗟𝗬.𝗜𝗢</a>
 │
-├🔸👨‍💻 **Developer:** [@𝐏𝐫𝐞𝐝𝐚𝐭𝐨𝐫](https://t.me/PredatorHackerzZ) 
+├🔸👨‍💻 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥 : <a href='https://t.me/SIRISH_123'>𝗦𝗜𝗥𝗜𝗦𝗛</a>
 │
-├🔹👥 **Bot Support:** [𝐒𝐮𝐩𝐩𝐨𝐫𝐭](https://t.me/TeleRoid14)
+├🔹👥 𝗕𝗢𝗧 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 : <a href='https://t.me/KDRAMSREQUEST'>𝗝𝗢𝗜𝗡 𝗡𝗢𝗪</a>
 │
-├🔸🔔 **Bot Updates:** [𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/TeleRoidGroup)
+├🔸🔔 𝗕𝗢𝗧 𝗨𝗣𝗗𝗔𝗧𝗘𝗦 : <a href='https://t.me/k_Drama_Hindi_Dubbed_avl'>𝗝𝗢𝗜𝗡 𝗨𝗣𝗗𝗔𝗧𝗘𝗦</a>
 │
 ╰──────[ 😎 ]───────────⍟<b>""",
 
