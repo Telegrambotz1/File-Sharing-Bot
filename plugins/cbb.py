@@ -28,7 +28,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
 │
 ├🔸🔔 **Bot Updates:** [𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/TeleRoidGroup)
 │
-╰──────[ 😎 ]───────────⍟<b>"""
+╰──────[ 😎 ]───────────⍟<b>""",
 
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
