@@ -40,6 +40,10 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                 ]
             )
         )
+    elif data == "help":
+        await query.message.edit_text(
+            text = f" hi wassup",
+        )
     elif data == "close":
         await query.message.delete()
         try:
