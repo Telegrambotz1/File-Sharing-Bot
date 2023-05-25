@@ -116,24 +116,11 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
 
 #=====================================================================================##
 
-@Bot.on_callback_query()
-async def cb_handler(client: Bot, query: CallbackQuery):
-    data = query.data
-    if data == "bruh":
-        await query.message.edit_text(
-            text = f"<b>○ Creator : <a href='https://t.me/SIRISH_123'>𝗦𝗜𝗥𝗜𝗦𝗛</a>\n○ Language : <code>Python3</code>\n○ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio {__version__}</a>\n○ Channel : @BOSSHINDIOFFCIAL_DRAMAZ\n○ Support Group : @MOVIESREQUESTGROUPINDIA</b>",
-            disable_web_page_preview = True,
-            reply_markup = InlineKeyboardMarkup(
-                [
-                    [   
-                        InlineKeyboardButton("😇 𝗖𝗢𝗡𝗧𝗔𝗖𝗧",url= "https://t.me/SIRISH_123"),
-                        InlineKeyboardButton("🔒 𝗖𝗟𝗢𝗦𝗘", callback_data = "close")
-                    ]
-                ]
-            )
-        )
 
-
+@Bot.on_message(filters.command('help') & filters.private & subscribed)
+async def start_command(client: Client, message: Message):
+     await await message.reply_photo(
+         photo = "https://telegra.ph/file/b2edd6a66f869e4fc533d.jpg")
 
 
 
