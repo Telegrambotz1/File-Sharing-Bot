@@ -118,7 +118,7 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
 
 
 @Bot.on_message(filters.command('help'))
-async def help_cmd(client: Client, message: Message):
+async def help_cmd(client, message):
      await message.reply_photo(
          photo = "https://telegra.ph/file/b2edd6a66f869e4fc533d.jpg")
 
