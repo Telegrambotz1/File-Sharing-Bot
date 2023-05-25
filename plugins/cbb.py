@@ -46,3 +46,30 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             await query.message.reply_to_message.delete()
         except:
             pass
+
+@Bot.on_callback_query()
+async def cb_handler(client: Bot, query: CallbackQuery):
+    data = query.data
+    if data == "help":
+        await query.message.edit_text(
+            text = f"""<b>\n
+            
+
+""",
+
+            disable_web_page_preview = True,
+            reply_markup = InlineKeyboardMarkup(
+                [
+                    [   
+                        InlineKeyboardButton("😇 𝗖𝗢𝗡𝗧𝗔𝗖𝗧",url= "https://t.me/SIRISH_123"),
+                        InlineKeyboardButton("🔒 𝗖𝗟𝗢𝗦𝗘", callback_data = "close")
+                    ]
+                ]
+            )
+        )
+    elif data == "close":
+        await query.message.delete()
+        try:
+            await query.message.reply_to_message.delete()
+        except:
+            pass
